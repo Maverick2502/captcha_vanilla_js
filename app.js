@@ -14,7 +14,7 @@ loginButton.addEventListener("click", async (e) => {
 
   msg.innerHTML = "";
 
-  const res = await fetch("http://192.168.43.54:4747/login", {
+  const res = await fetch("your_route", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ Login, Password, CaptchaStr: Captcha.value }),
